@@ -1,0 +1,51 @@
+GET http://localhost:3001
+
+###
+
+GET http://localhost:3001/info
+
+###
+
+GET http://localhost:3001/api/persons
+
+###
+
+GET http://localhost:3001/api/persons/5fe51e2a3c64444b98bda8a4
+
+###
+
+DELETE http://localhost:3001/api/persons/5fe51b7b3c64444b98bda8a3
+
+###
+
+POST http://localhost:3001/api/persons
+content-type: application/json
+
+{
+  "name": "Rintarou Okabe",
+  "number": "039248709478"
+}
+
+###
+
+POST http://localhost:3001/api/persons
+content-type: application/json
+
+{
+  "name": "test",
+  "number": "123456"
+}
+
+###
+
+GET https://blooming-journey-91162.herokuapp.com/api/persons
+
+###
+
+PUT http://localhost:3001/api/persons/5fe51e2a3c64444b98bda8a4
+content-type: application/json
+
+{
+    "name": "test",
+    "number": 123456
+}

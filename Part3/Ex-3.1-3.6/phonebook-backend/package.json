@@ -1,0 +1,29 @@
+{
+  "name": "phonebook-backend",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "lint": "eslint .",
+    "build:ui": "rm -rf build && cd ../../part2/phonebook && rm -rf build && npm run build --prod && cp -r build ../../part3/phonebook-backend/",
+    "deploy": "cd ../../ && git push heroku master",
+    "deploy:full": "npm run build:ui && cd ../../ && git add part2 part3 && git commit -m uibuild && cd part3/phonebook-backend && npm run deploy",
+    "logs:prod": "heroku logs --tail"
+  },
+  "author": "Inci Qasimova",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.8",
+    "mongoose-unique-validator": "^2.0.3",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.17.0",
+    "nodemon": "^2.0.6"
+  }
+}
