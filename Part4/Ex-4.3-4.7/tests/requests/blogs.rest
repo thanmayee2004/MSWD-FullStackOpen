@@ -1,0 +1,18 @@
+POST http://localhost:3003/api/blogs 
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3QiLCJpZCI6IjYzYTFmMmQxM2U5OTQ2Njc0ZmE0ZmFjMiIsImlhdCI6MTY3MTY4OTA1OCwiZXhwIjoxNjcxNjkyNjU4fQ.aNghi7w8XQVlgeyMn5xW2m2yw6bN__2PpKef8i7SLQs
+
+{
+      "author": "to be deleted",
+      "title": "will delete soon",
+      "url": "www.delete.com",
+      "likes": 35
+}
+###
+
+GET http://localhost:3003/api/blogs
+
+###
+
+DELETE http://localhost:3003/api/blogs/63a3f898489f462867eeaf13
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3QiLCJpZCI6IjYzYTFmMmQxM2U5OTQ2Njc0ZmE0ZmFjMiIsImlhdCI6MTY3MTY4OTA1OCwiZXhwIjoxNjcxNjkyNjU4fQ.aNghi7w8XQVlgeyMn5xW2m2yw6bN__2PpKef8i7SLQs
